@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B38F3BCB1F4D1E5E00D8B105 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B38F3BCA1F4D1E5E00D8B105 /* main.m */; };
+		B38F3BCE1F4D1E5E00D8B105 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B38F3BCD1F4D1E5E00D8B105 /* AppDelegate.m */; };
+		B38F3BD11F4D1E5E00D8B105 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B38F3BD01F4D1E5E00D8B105 /* ViewController.m */; };
+		B38F3BD41F4D1E5E00D8B105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B38F3BD21F4D1E5E00D8B105 /* Main.storyboard */; };
+		B38F3BD61F4D1E5E00D8B105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B38F3BD51F4D1E5E00D8B105 /* Assets.xcassets */; };
+		B38F3BD91F4D1E5E00D8B105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B38F3BD71F4D1E5E00D8B105 /* LaunchScreen.storyboard */; };
+		B38F3BDE1F4D1E5F00D8B105 /* LiWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B38F3BDD1F4D1E5F00D8B105 /* LiWatch WatchKit App.app */; };
+		B38F3BE41F4D1E5F00D8B105 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B38F3BE21F4D1E5F00D8B105 /* Interface.storyboard */; };
+		B38F3BE61F4D1E5F00D8B105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B38F3BE51F4D1E5F00D8B105 /* Assets.xcassets */; };
+		B38F3BED1F4D1E5F00D8B105 /* LiWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B38F3BEC1F4D1E5F00D8B105 /* LiWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B38F3BF51F4D1E5F00D8B105 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B38F3BF41F4D1E5F00D8B105 /* InterfaceController.m */; };
+		B38F3BF81F4D1E5F00D8B105 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B38F3BF71F4D1E5F00D8B105 /* ExtensionDelegate.m */; };
+		B38F3BFB1F4D1E5F00D8B105 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B38F3BFA1F4D1E5F00D8B105 /* NotificationController.m */; };
+		B38F3BFE1F4D1E5F00D8B105 /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B38F3BFD1F4D1E5F00D8B105 /* ComplicationController.m */; };
+		B38F3C001F4D1E5F00D8B105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B38F3BFF1F4D1E5F00D8B105 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B38F3BDF1F4D1E5F00D8B105 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B38F3BBE1F4D1E5E00D8B105 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B38F3BDC1F4D1E5F00D8B105;
+			remoteInfo = "LiWatch WatchKit App";
+		};
+		B38F3BEE1F4D1E5F00D8B105 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B38F3BBE1F4D1E5E00D8B105 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B38F3BEB1F4D1E5F00D8B105;
+			remoteInfo = "LiWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B38F3C071F4D1E5F00D8B105 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B38F3BED1F4D1E5F00D8B105 /* LiWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38F3C0B1F4D1E5F00D8B105 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B38F3BDE1F4D1E5F00D8B105 /* LiWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B38F3BC61F4D1E5E00D8B105 /* LiWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B38F3BCA1F4D1E5E00D8B105 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B38F3BCC1F4D1E5E00D8B105 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B38F3BCD1F4D1E5E00D8B105 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B38F3BCF1F4D1E5E00D8B105 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B38F3BD01F4D1E5E00D8B105 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B38F3BD31F4D1E5E00D8B105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B38F3BD51F4D1E5E00D8B105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B38F3BD81F4D1E5E00D8B105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B38F3BDA1F4D1E5E00D8B105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B38F3BDD1F4D1E5F00D8B105 /* LiWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LiWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B38F3BE31F4D1E5F00D8B105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B38F3BE51F4D1E5F00D8B105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B38F3BE71F4D1E5F00D8B105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B38F3BEC1F4D1E5F00D8B105 /* LiWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LiWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B38F3BF21F4D1E5F00D8B105 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B38F3BF31F4D1E5F00D8B105 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		B38F3BF41F4D1E5F00D8B105 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		B38F3BF61F4D1E5F00D8B105 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		B38F3BF71F4D1E5F00D8B105 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		B38F3BF91F4D1E5F00D8B105 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		B38F3BFA1F4D1E5F00D8B105 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		B38F3BFC1F4D1E5F00D8B105 /* ComplicationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplicationController.h; sourceTree = "<group>"; };
+		B38F3BFD1F4D1E5F00D8B105 /* ComplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
+		B38F3BFF1F4D1E5F00D8B105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B38F3C011F4D1E5F00D8B105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B38F3BC31F4D1E5E00D8B105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38F3BE91F4D1E5F00D8B105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B38F3BBD1F4D1E5E00D8B105 = {
+			isa = PBXGroup;
+			children = (
+				B38F3BC81F4D1E5E00D8B105 /* LiWatch */,
+				B38F3BE11F4D1E5F00D8B105 /* LiWatch WatchKit App */,
+				B38F3BF01F4D1E5F00D8B105 /* LiWatch WatchKit Extension */,
+				B38F3BC71F4D1E5E00D8B105 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B38F3BC71F4D1E5E00D8B105 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B38F3BC61F4D1E5E00D8B105 /* LiWatch.app */,
+				B38F3BDD1F4D1E5F00D8B105 /* LiWatch WatchKit App.app */,
+				B38F3BEC1F4D1E5F00D8B105 /* LiWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B38F3BC81F4D1E5E00D8B105 /* LiWatch */ = {
+			isa = PBXGroup;
+			children = (
+				B38F3BCC1F4D1E5E00D8B105 /* AppDelegate.h */,
+				B38F3BCD1F4D1E5E00D8B105 /* AppDelegate.m */,
+				B38F3BCF1F4D1E5E00D8B105 /* ViewController.h */,
+				B38F3BD01F4D1E5E00D8B105 /* ViewController.m */,
+				B38F3BD21F4D1E5E00D8B105 /* Main.storyboard */,
+				B38F3BD51F4D1E5E00D8B105 /* Assets.xcassets */,
+				B38F3BD71F4D1E5E00D8B105 /* LaunchScreen.storyboard */,
+				B38F3BDA1F4D1E5E00D8B105 /* Info.plist */,
+				B38F3BC91F4D1E5E00D8B105 /* Supporting Files */,
+			);
+			path = LiWatch;
+			sourceTree = "<group>";
+		};
+		B38F3BC91F4D1E5E00D8B105 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B38F3BCA1F4D1E5E00D8B105 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B38F3BE11F4D1E5F00D8B105 /* LiWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B38F3BE21F4D1E5F00D8B105 /* Interface.storyboard */,
+				B38F3BE51F4D1E5F00D8B105 /* Assets.xcassets */,
+				B38F3BE71F4D1E5F00D8B105 /* Info.plist */,
+			);
+			path = "LiWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		B38F3BF01F4D1E5F00D8B105 /* LiWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B38F3BF31F4D1E5F00D8B105 /* InterfaceController.h */,
+				B38F3BF41F4D1E5F00D8B105 /* InterfaceController.m */,
+				B38F3BF61F4D1E5F00D8B105 /* ExtensionDelegate.h */,
+				B38F3BF71F4D1E5F00D8B105 /* ExtensionDelegate.m */,
+				B38F3BF91F4D1E5F00D8B105 /* NotificationController.h */,
+				B38F3BFA1F4D1E5F00D8B105 /* NotificationController.m */,
+				B38F3BFC1F4D1E5F00D8B105 /* ComplicationController.h */,
+				B38F3BFD1F4D1E5F00D8B105 /* ComplicationController.m */,
+				B38F3BFF1F4D1E5F00D8B105 /* Assets.xcassets */,
+				B38F3C011F4D1E5F00D8B105 /* Info.plist */,
+				B38F3BF11F4D1E5F00D8B105 /* Supporting Files */,
+			);
+			path = "LiWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B38F3BF11F4D1E5F00D8B105 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B38F3BF21F4D1E5F00D8B105 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B38F3BC51F4D1E5E00D8B105 /* LiWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B38F3C0C1F4D1E5F00D8B105 /* Build configuration list for PBXNativeTarget "LiWatch" */;
+			buildPhases = (
+				B38F3BC21F4D1E5E00D8B105 /* Sources */,
+				B38F3BC31F4D1E5E00D8B105 /* Frameworks */,
+				B38F3BC41F4D1E5E00D8B105 /* Resources */,
+				B38F3C0B1F4D1E5F00D8B105 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B38F3BE01F4D1E5F00D8B105 /* PBXTargetDependency */,
+			);
+			name = LiWatch;
+			productName = LiWatch;
+			productReference = B38F3BC61F4D1E5E00D8B105 /* LiWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B38F3BDC1F4D1E5F00D8B105 /* LiWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B38F3C081F4D1E5F00D8B105 /* Build configuration list for PBXNativeTarget "LiWatch WatchKit App" */;
+			buildPhases = (
+				B38F3BDB1F4D1E5F00D8B105 /* Resources */,
+				B38F3C071F4D1E5F00D8B105 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B38F3BEF1F4D1E5F00D8B105 /* PBXTargetDependency */,
+			);
+			name = "LiWatch WatchKit App";
+			productName = "LiWatch WatchKit App";
+			productReference = B38F3BDD1F4D1E5F00D8B105 /* LiWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B38F3BEB1F4D1E5F00D8B105 /* LiWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B38F3C041F4D1E5F00D8B105 /* Build configuration list for PBXNativeTarget "LiWatch WatchKit Extension" */;
+			buildPhases = (
+				B38F3BE81F4D1E5F00D8B105 /* Sources */,
+				B38F3BE91F4D1E5F00D8B105 /* Frameworks */,
+				B38F3BEA1F4D1E5F00D8B105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LiWatch WatchKit Extension";
+			productName = "LiWatch WatchKit Extension";
+			productReference = B38F3BEC1F4D1E5F00D8B105 /* LiWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B38F3BBE1F4D1E5E00D8B105 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = microleo;
+				TargetAttributes = {
+					B38F3BC51F4D1E5E00D8B105 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9YY3S9BBZ6;
+						ProvisioningStyle = Automatic;
+					};
+					B38F3BDC1F4D1E5F00D8B105 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9YY3S9BBZ6;
+						ProvisioningStyle = Automatic;
+					};
+					B38F3BEB1F4D1E5F00D8B105 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9YY3S9BBZ6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B38F3BC11F4D1E5E00D8B105 /* Build configuration list for PBXProject "LiWatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B38F3BBD1F4D1E5E00D8B105;
+			productRefGroup = B38F3BC71F4D1E5E00D8B105 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B38F3BC51F4D1E5E00D8B105 /* LiWatch */,
+				B38F3BDC1F4D1E5F00D8B105 /* LiWatch WatchKit App */,
+				B38F3BEB1F4D1E5F00D8B105 /* LiWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B38F3BC41F4D1E5E00D8B105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B38F3BD91F4D1E5E00D8B105 /* LaunchScreen.storyboard in Resources */,
+				B38F3BD61F4D1E5E00D8B105 /* Assets.xcassets in Resources */,
+				B38F3BD41F4D1E5E00D8B105 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38F3BDB1F4D1E5F00D8B105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B38F3BE61F4D1E5F00D8B105 /* Assets.xcassets in Resources */,
+				B38F3BE41F4D1E5F00D8B105 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38F3BEA1F4D1E5F00D8B105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B38F3C001F4D1E5F00D8B105 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B38F3BC21F4D1E5E00D8B105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B38F3BD11F4D1E5E00D8B105 /* ViewController.m in Sources */,
+				B38F3BCE1F4D1E5E00D8B105 /* AppDelegate.m in Sources */,
+				B38F3BCB1F4D1E5E00D8B105 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38F3BE81F4D1E5F00D8B105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B38F3BF81F4D1E5F00D8B105 /* ExtensionDelegate.m in Sources */,
+				B38F3BFE1F4D1E5F00D8B105 /* ComplicationController.m in Sources */,
+				B38F3BF51F4D1E5F00D8B105 /* InterfaceController.m in Sources */,
+				B38F3BFB1F4D1E5F00D8B105 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B38F3BE01F4D1E5F00D8B105 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B38F3BDC1F4D1E5F00D8B105 /* LiWatch WatchKit App */;
+			targetProxy = B38F3BDF1F4D1E5F00D8B105 /* PBXContainerItemProxy */;
+		};
+		B38F3BEF1F4D1E5F00D8B105 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B38F3BEB1F4D1E5F00D8B105 /* LiWatch WatchKit Extension */;
+			targetProxy = B38F3BEE1F4D1E5F00D8B105 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B38F3BD21F4D1E5E00D8B105 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B38F3BD31F4D1E5E00D8B105 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B38F3BD71F4D1E5E00D8B105 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B38F3BD81F4D1E5E00D8B105 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B38F3BE21F4D1E5F00D8B105 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B38F3BE31F4D1E5F00D8B105 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B38F3C021F4D1E5F00D8B105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B38F3C031F4D1E5F00D8B105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B38F3C051F4D1E5F00D8B105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 9YY3S9BBZ6;
+				INFOPLIST_FILE = "LiWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microleo.LiWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		B38F3C061F4D1E5F00D8B105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 9YY3S9BBZ6;
+				INFOPLIST_FILE = "LiWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microleo.LiWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		B38F3C091F4D1E5F00D8B105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9YY3S9BBZ6;
+				IBSC_MODULE = LiWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "LiWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microleo.LiWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		B38F3C0A1F4D1E5F00D8B105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9YY3S9BBZ6;
+				IBSC_MODULE = LiWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "LiWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microleo.LiWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		B38F3C0D1F4D1E5F00D8B105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9YY3S9BBZ6;
+				INFOPLIST_FILE = LiWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microleo.LiWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B38F3C0E1F4D1E5F00D8B105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9YY3S9BBZ6;
+				INFOPLIST_FILE = LiWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microleo.LiWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B38F3BC11F4D1E5E00D8B105 /* Build configuration list for PBXProject "LiWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B38F3C021F4D1E5F00D8B105 /* Debug */,
+				B38F3C031F4D1E5F00D8B105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B38F3C041F4D1E5F00D8B105 /* Build configuration list for PBXNativeTarget "LiWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B38F3C051F4D1E5F00D8B105 /* Debug */,
+				B38F3C061F4D1E5F00D8B105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B38F3C081F4D1E5F00D8B105 /* Build configuration list for PBXNativeTarget "LiWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B38F3C091F4D1E5F00D8B105 /* Debug */,
+				B38F3C0A1F4D1E5F00D8B105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B38F3C0C1F4D1E5F00D8B105 /* Build configuration list for PBXNativeTarget "LiWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B38F3C0D1F4D1E5F00D8B105 /* Debug */,
+				B38F3C0E1F4D1E5F00D8B105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B38F3BBE1F4D1E5E00D8B105 /* Project object */;
+}
